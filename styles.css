@@ -1,0 +1,581 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+h1,h2,h3,h4,h5,h6,p,ul {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding:0;
+	font-family: 'Poppins', sans-serif;
+}
+h2,h3,h5 {
+	text-align: center;
+	font-weight: 300;
+}
+h6 {
+	padding: 5px;
+}
+p {
+	font-size: 14px;
+}
+.wrapper {
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+/* HOME PAGE
+------------- */
+.header-bar {
+	background-color :#2b2b2b;
+	height: 45px;
+}
+.header-logo {
+	width: 100%;
+	border-bottom:1px solid lightgray ;
+}
+.header-logo img {
+	max-width: 100%;
+	display: block;
+	margin: 10px auto;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: grey;
+	margin: 10px;
+	font-size: 12px;
+}
+img {
+	max-width: 100%;
+	display: block;
+	margin: 0;
+}
+li {
+	display: inline-block;
+	text-decoration: none;
+	width: 10%;
+	margin: 8px;
+}
+nav ul {
+	width: 100%;
+	margin: 0 auto;
+}
+.fa-shopping-cart:before {
+	padding-right: 15px;
+}
+.left-bar,.right-bar {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.hero {
+	background-image: url('Flowie-MainFiles/assets/plant_hero.jpeg');
+	height: 500px;
+	background-size: cover;
+	background-position: top center;
+	color: white;
+	position: relative;
+}
+.hero img {
+	width: 400px;
+	position: absolute;
+	top: 50px;
+	left: 400px;
+}
+.hero-text {
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	padding-top: 350px;
+}
+.buttons {
+	display: inline-block;
+	width: 100%;
+	margin-top: 10px;
+}
+.button-1 {
+	background-color: #2a2a2a;
+	text-align: center;
+    text-decoration: none;
+    color: white;
+    border: none;
+    font-size: 12px;
+    padding: 5px 25px;
+    margin-right: 10px;
+}
+.button-2 {
+	background-color: #dade56;
+	text-align: center;
+    text-decoration: none;
+    color: black;
+    border: none;
+    font-size: 12px;
+    padding: 5px 15px;
+}
+.welcome-text h2 {
+	margin-top: 50px;
+	font-size: 20px;
+	letter-spacing: 5px;
+}
+.welcome-text p {
+	padding: 10px;
+	text-align: center;
+}
+figcaption {
+	text-align: center;
+	font-size: 12px;
+	margin-top: 5px;
+}
+span {
+	color: #81a05d;
+}
+.pots-gallery figure {
+	width: calc(33% - 20px);
+	float: left;
+	margin: 10px;
+}
+.featured-container {
+	background-color: #f1f1f1;
+	height: 650px;
+	margin: 50px 0;
+	padding-top: 40px;
+
+}
+.featured-container h2 {
+	margin-bottom: 20px;
+}
+.featured-container ul {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.featured-container li {
+	display: inline-block;
+	width: 15%;
+	font-size: 12px;
+}
+.featured-items {
+	float: left;
+	max-width: 50%;
+}
+.featured-items	figure{
+	max-width: calc(40% - 20px);
+	min-height: 210px;
+	max-height: 210px;
+	float: left;
+	margin: 10px;
+}
+.green-button {
+	border: 2px solid rgb(143,168,111);
+	background-color:rgb(143,168,111) ;
+	margin-top: 0;
+}
+.bestwishes {
+	float:left;
+	width: 50%;
+	height: 475px;
+	border: 6px solid white;
+	padding: 40px;
+	position: relative;
+}
+.bestwishes div p {
+	font-size: 12px;
+}
+.bestwishes h2 {
+	margin: 0;
+	text-align:left ;
+}
+.bestwishes img {
+	position: absolute;
+	right: -200px;
+	bottom: 0;
+	margin: 0;
+}
+.more {
+	margin-left: 10%;
+	margin-top: 30px;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+.fa-angle-double-right {
+	color:rgb(143,168,111) ;
+	font-size: 12px;
+	margin-right: 10px;
+}
+.lower-background {
+	background-image: url('Flowie-MainFiles/assets/plants_wide.jpeg');
+	height: 300px;
+	background-size:cover;
+	background-position: left;
+	margin-bottom: 50px;
+}
+.lower-background img {
+	margin: 0 auto;
+	max-width: 600px;
+	padding-top: 10%;
+}
+.vintage {
+	clear: both;
+	background-color:#f1f1f1 ;
+}
+.v-logos {
+	margin: 0 auto;
+}
+.v-logos img {
+	display: inline-block;
+	max-width: 18%;
+	margin: 10px 0;
+	margin-right: 29px;
+}
+
+/* BLOG POSTS
+--------------- */
+.blog {
+	padding-bottom: 5%;
+}
+.blog h2 {
+	margin-bottom: 30px;
+}
+.blog a {
+	margin: 0;
+}
+.blog p {
+	font-size: 13px;
+}
+.post {
+	width: calc(50% - 15px);
+	float: left;
+	margin-right:15px;
+}
+.post img {
+	max-width: 100%;
+}
+.date{
+	float: left;
+	width: 30%;
+	position: relative;
+	font-weight: 700;
+	text-align:center;
+}
+.num {
+	font-size: 100px;
+	color: rgb(241, 241,241);
+}
+.month {
+	font-size: 20px;
+	color:#80a05d;
+	letter-spacing: 1px;
+	position: absolute;
+	top:40%;
+	left:20%;
+}
+.text {
+	float: left;
+	width: 70%;
+}
+.title {
+	color:black;
+	font-weight: 600;
+	margin-bottom:0;
+}
+.sub-title {
+	color:#80a05d;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+/* ABOUT PAGE
+---------------- */
+.about-img {
+	background-image: url('Flowie-MainFiles/assets/girl_tree.jpeg');
+	background-size: cover;
+	background-position: bottom;
+	height: 500px;
+	position: relative;
+}
+.box {
+	width: 68%;
+	height: 20%;
+	background-color: white;
+	text-decoration: underline;
+    text-align: left;
+    padding: 10px;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: #81a05d;
+}
+.box h4 {
+	font-weight: 300;
+	font-size: 20px;
+	padding-top:10px;
+	padding-left: 10px;
+	line-height: 25px;
+}
+.flowie-garden {
+	margin-bottom: 100px;
+}
+.services {
+	height: 300px;
+	border-top: 1px solid lightgray;
+}
+.box1,.box2,.box3,.box4{
+	float: left;
+	height: 300px;
+	width: calc(25% - 2px);
+	margin: 0px 1px;
+	text-align: center;
+	padding-top: 30px;
+}
+.box1 h6 {
+	color:#81a05d ;
+}
+.box3 h6 {
+	color:#81a05d ;
+}
+.box4 h6 {
+	color:#81a05d ;
+}
+.services img {
+	margin: 0 auto;
+}
+.box1{
+	background-image: url('Flowie-MainFiles/assets/bg_logo_left.png');
+	background-size: cover;
+}
+.box2 {
+	background-image: linear-gradient(0deg, rgba(220,228,106,0.8), 
+		rgba(229,239,117,0.7)), 
+	url('Flowie-MainFiles/assets/hover_image.jpeg');
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+.box3{
+	background-color: #f1f1f1;
+}
+.box4 {
+	background-image: url('Flowie-MainFiles/assets/bg_logo_right.jpg');
+	background-size: cover;
+	padding-top: 20px;
+}
+.student-container {
+	background-image: linear-gradient(0deg, rgba(200,220,220,0.3), 
+		rgba(200,200,200,0.4)), url('Flowie-MainFiles/assets/flower_pots.jpeg');
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	margin-bottom: 40px;
+}
+.student-text{
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.student-text p {
+	font-style: italic;
+	font-weight: 300;
+	width: 70%;
+	margin: 0 auto;
+	font-size: 22px;
+	padding-top: 14%;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 0.5px black;
+}
+.student-text h6 {
+	margin-top:10px;
+	padding: 3px 10px;
+	display: inline-block;
+	background-color: black;
+	font-weight: 400;
+}
+.student-text small {
+	display: block;
+	color: white;
+	font-size: 10px;
+}
+.instagram {
+	clear: both;
+	width: 100%;
+}
+.instagram img {
+	float: left;
+	width: 12.5%;
+	height: 150px;
+}
+/* CONTACT PAGE
+---------------- */
+.background {
+	background-image: linear-gradient(0deg, rgba(143,168,111,0.7), 
+		rgba(143,168,111,0.5)), 
+	url('Flowie-MainFiles/assets/plants_wide.jpeg');
+	background-size: cover;
+	height: 200px;
+}
+.overlay {
+	width: 100%;
+	height: 200px;
+	color: white;
+	padding: 70px;
+}
+.contact-sub-nav {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	height: 50px;
+	border-bottom: 1px solid lightgray;
+}
+.plants {
+	background-image: url('Flowie-MainFiles/assets/garden-way.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+.contact {
+	margin: auto;
+	width: 90%;
+	height: 120px;
+	background-color: white;
+	font-size: 12px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left:40px;
+}
+.contact figure {
+	float: left;
+	width: calc(33% - 10px);
+	margin: 5px;
+	margin-top: 20px;
+}
+.email {
+	border-right: 2px solid grey;
+}
+.canada {
+	border-left: 2px solid grey;
+}
+.contact img {
+	width: 45px;
+	height: 45px;
+	margin: 0 auto;
+	margin-bottom:10px ;
+	padding-bottom: 10px;
+}
+.contact-us {
+	margin-bottom: 100px;
+}
+.map {
+	margin-top:50px ;
+	float: left;
+	width: 50%;
+}
+.form {
+	margin-top: 45px;
+	margin-left: 20px;
+	float: left;
+	width: calc(50% - 20px);
+	text-align: center;
+	font-weight: 300;
+}
+.form p {
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.form input[type=submit] {
+	background-color: #81a05d ;
+	padding: 5px;
+	width:120px ;
+}
+input { 
+	width: 100%;
+	border: none;
+	background-color:#f1f1f1 ;
+}
+textarea {
+	width: 100%;
+	height: 150px;
+	border: none;
+	background-color:#f1f1f1 ;
+}
+
+/* FOOTER SECTION
+------------------- */
+
+footer {
+	clear: both;
+	background-image: url('Flowie-MainFiles/assets/footer_bg.jpg');
+	background-size: cover;
+	height: 330px;
+}
+.footer-left,
+.footer-center,
+.footer-right {
+	float: left;
+	width: calc(33% - 20px);
+	color: white;
+	font-weight: 300;
+	margin: 50px 10px;
+	text-align: center;
+}
+.footer-left img {
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+.footer-left h5,
+.footer-center h5,
+.footer-right h5 {
+	border-bottom: 1px solid darkgrey ;
+	padding-bottom: 20px;
+	letter-spacing: 2px;
+}
+.footer-center h5 {
+	margin-bottom:30px ;
+}
+.footer-right h5 {
+	margin-bottom: 30px;
+}
+.footer-right p {
+	margin-bottom: 30px;
+	width: 260px;
+}
+footer p, small {
+	color: #7e7e7e;
+}
+.social {
+	margin: 25px 0;
+}
+i {
+	padding-right: 6px;
+}
+input[type=submit] {
+	background-color: #dade56;
+	text-align: center;
+    text-decoration: none;
+    color: black;
+    border: none;
+    width: 100px;
+    font-size: 12px;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+input[type=email] {
+	width: 100%;
+}
+input[placeholder]{
+	text-align: center;
+}
